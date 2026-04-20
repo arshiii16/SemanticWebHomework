@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations by Skill and Cuisine</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes}">Recipes</a>
+    <a th:href="@{/users}">Users</a>
+    <a th:href="@{/add-recipe}">Add Recipe</a>
+    <a th:href="@{/add-user}">Add User</a>
+    <a th:href="@{/recommend-by-skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend-by-skill-and-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes-xsl}">Recipes with XSL</a>
+    <a th:href="@{/filter-by-cuisine}">Filter by Cuisine</a>
+</div>
+
+<div class="page-container">
+    <h1 class="page-title">Recipe Recommendations by Skill and Preferred Cuisine</h1>
+
+    <div th:if="${errorMessage}" class="error-message" th:text="${errorMessage}"></div>
+
+    <div th:if="${user}" class="highlight-box">
+        <h2>First User from XML</h2>
+        <p><strong>Name:</strong> <span th:text="${user.name}"></span> <span th:text="${user.surname}"></span></p>
+        <p><strong>Cooking Skill Level:</strong> <span th:text="${user.cookingSkillLevel}"></span></p>
+        <p><strong>Preferred Cuisine Type:</strong> <span th:text="${user.preferredCuisineType}"></span></p>
+    </div>
+
+    <div th:if="${#lists.isEmpty(recommendedRecipes)}" class="info-box">
+        No recipes matched both the cooking skill level and preferred cuisine type.
+    </div>
+
+    <div th:each="recipe : ${recommendedRecipes}" class="card">
+        <h2 th:text="${recipe.title}"></h2>
+        <p><strong>ID:</strong> <span th:text="${recipe.id}"></span></p>
+        <p><strong>Cuisine Types:</strong> <span th:text="${recipe.cuisineTypes}"></span></p>
+        <p><strong>Difficulty Levels:</strong> <span th:text="${recipe.difficultyLevels}"></span></p>
+        <p><strong>Description:</strong> <span th:text="${recipe.description}"></span></p>
+    </div>
+</div>
+
+</body>
+</html>

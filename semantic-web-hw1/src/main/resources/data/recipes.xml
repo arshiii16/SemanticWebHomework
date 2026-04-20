@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<recipes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipes.xsd">
+        
+    <recipe id="1">
+                
+        <title>Creamy pumpkin pasta</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Italian</cuisine>
+                        
+            <cuisine>British</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="2">
+                
+        <title>Sausage, mustard &amp; apple hash</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Italian</cuisine>
+                        
+            <cuisine>European</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="3">
+                
+        <title>Mushroom stroganoff</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Latin American</cuisine>
+                        
+            <cuisine>Asian</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="4">
+                
+        <title>Beetroot &amp; feta pasta</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Greek</cuisine>
+                        
+            <cuisine>Middle Eastern</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="5">
+                
+        <title>Pork &amp; apple burgers</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Middle Eastern</cuisine>
+                        
+            <cuisine>Thai</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="6">
+                
+        <title>Mushroom soup</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>European</cuisine>
+                        
+            <cuisine>Italian</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="7">
+                
+        <title>Squash &amp; halloumi flatbreads with sweet chilli beetroot jam</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Greek</cuisine>
+                        
+            <cuisine>Thai</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="8">
+                
+        <title>Simple squash risotto</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Asian</cuisine>
+                        
+            <cuisine>Greek</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="9">
+                
+        <title>Slow cooker spiced root &amp; lentil casserole</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>British</cuisine>
+                        
+            <cuisine>European</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="10">
+                
+        <title>Squash &amp; spinach fusilli with pecans</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>American</cuisine>
+                        
+            <cuisine>Mediterranean</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="11">
+                
+        <title>Easy vegetable curry</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>European</cuisine>
+                        
+            <cuisine>Mexican</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="12">
+                
+        <title>Sausage &amp; butternut squash shells</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>British</cuisine>
+                        
+            <cuisine>Indian</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="13">
+                
+        <title>Autumn vegetable soup with cheesy toasts</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Mediterranean</cuisine>
+                        
+            <cuisine>Chinese</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="14">
+                
+        <title>Mushroom &amp; sausage pasta</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>American</cuisine>
+                        
+            <cuisine>European</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="15">
+                
+        <title>Creamy pumpkin &amp; lentil soup</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>British</cuisine>
+                        
+            <cuisine>Greek</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="16">
+                
+        <title>Curried parsnip soup</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Chinese</cuisine>
+                        
+            <cuisine>French</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="17">
+                
+        <title>Red onion gravy</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>American</cuisine>
+                        
+            <cuisine>European</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="18">
+                
+        <title>Butternut squash pilaf</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Asian</cuisine>
+                        
+            <cuisine>European</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="19">
+                
+        <title>Sausage &amp; maple swede traybake</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>Japanese</cuisine>
+                        
+            <cuisine>Latin American</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+        
+    <recipe id="20">
+                
+        <title>Cauliflower mac &amp; cheese</title>
+                
+        <cuisineTypes>
+                        
+            <cuisine>French</cuisine>
+                        
+            <cuisine>Chinese</cuisine>
+                    
+        </cuisineTypes>
+                
+        <difficultyLevels>
+                        
+            <level>Beginner</level>
+                        
+            <level>Intermediate</level>
+                        
+            <level>Advanced</level>
+                    
+        </difficultyLevels>
+                
+        <description>Scraped recipe title from BBC Good Food collection page.</description>
+            
+    </recipe>
+    
+    <recipe id="21">
+        <title>Minestrone Soup</title>
+        <cuisineTypes>
+            <cuisine>Italian</cuisine>
+            <cuisine>Mediterranean</cuisine>
+        </cuisineTypes>
+        <difficultyLevels>
+            <level>Beginner</level>
+            <level>Intermediate</level>
+            <level>Advanced</level>
+        </difficultyLevels>
+        <description>Traditional vegetable soup with beans and pasta.</description>
+    </recipe>
+</recipes>

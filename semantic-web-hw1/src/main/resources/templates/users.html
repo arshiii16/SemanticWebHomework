@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes}">Recipes</a>
+    <a th:href="@{/users}">Users</a>
+    <a th:href="@{/add-recipe}">Add Recipe</a>
+    <a th:href="@{/add-user}">Add User</a>
+    <a th:href="@{/recommend-by-skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend-by-skill-and-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes-xsl}">Recipes with XSL</a>
+    <a th:href="@{/filter-by-cuisine}">Filter by Cuisine</a>
+</div>
+
+<div class="page-container">
+    <h1 class="page-title">User List</h1>
+
+    <div style="text-align:center; margin-bottom:20px;">
+        <a class="button dark" th:href="@{/add-user}">Add New User</a>
+    </div>
+
+    <div th:if="${successMessage}" class="success-message" th:text="${successMessage}"></div>
+
+    <div th:each="user : ${users}" class="card user-card">
+        <h2>User <span th:text="${user.id}"></span></h2>
+        <p><strong>Name:</strong> <span th:text="${user.name}"></span></p>
+        <p><strong>Surname:</strong> <span th:text="${user.surname}"></span></p>
+        <p><strong>Cooking Skill Level:</strong> <span th:text="${user.cookingSkillLevel}"></span></p>
+        <p><strong>Preferred Cuisine Type:</strong> <span th:text="${user.preferredCuisineType}"></span></p>
+    </div>
+</div>
+
+</body>
+</html>

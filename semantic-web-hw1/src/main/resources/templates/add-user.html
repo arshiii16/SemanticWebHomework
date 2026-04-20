@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes}">Recipes</a>
+    <a th:href="@{/users}">Users</a>
+    <a th:href="@{/add-recipe}">Add Recipe</a>
+    <a th:href="@{/add-user}">Add User</a>
+    <a th:href="@{/recommend-by-skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend-by-skill-and-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes-xsl}">Recipes with XSL</a>
+    <a th:href="@{/filter-by-cuisine}">Filter by Cuisine</a>
+</div>
+
+<div class="page-container">
+    <div class="card" style="max-width: 750px; margin: auto;">
+        <h1 class="page-title">Add User</h1>
+
+        <div th:if="${errorMessage}" class="error-message" th:text="${errorMessage}"></div>
+
+        <form th:action="@{/add-user}" th:object="${userProfile}" method="post">
+            <label>Name</label>
+            <input type="text" th:field="*{name}" />
+
+            <label>Surname</label>
+            <input type="text" th:field="*{surname}" />
+
+            <label>Cooking Skill Level</label>
+            <input type="text" th:field="*{cookingSkillLevel}" placeholder="Beginner / Intermediate / Advanced" />
+
+            <label>Preferred Cuisine Type</label>
+            <input type="text" th:field="*{preferredCuisineType}" placeholder="Italian" />
+
+            <button class="button dark" type="submit">Save User</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Recommendation App</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes}">Recipes</a>
+    <a th:href="@{/users}">Users</a>
+    <a th:href="@{/add-recipe}">Add Recipe</a>
+    <a th:href="@{/add-user}">Add User</a>
+    <a th:href="@{/recommend-by-skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend-by-skill-and-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes-xsl}">Recipes with XSL</a>
+    <a th:href="@{/filter-by-cuisine}">Filter by Cuisine</a>
+</div>
+
+<div class="page-container">
+    <h1 class="page-title">Recipe Recommendation Application</h1>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Recipes</h2>
+            <p>Total recipes in XML: <strong th:text="${recipeCount}"></strong></p>
+            <a class="button" th:href="@{/recipes}">View Recipes</a>
+        </div>
+
+        <div class="card">
+            <h2>Users</h2>
+            <p>Total users in XML: <strong th:text="${userCount}"></strong></p>
+            <a class="button secondary" th:href="@{/users}">View Users</a>
+        </div>
+
+        <div class="card">
+            <h2>Add Data</h2>
+            <p>Add a new recipe or a new user to the XML files.</p>
+            <a class="button dark" th:href="@{/add-recipe}">Add Recipe</a>
+            <a class="button secondary" th:href="@{/add-user}" style="margin-left:10px;">Add User</a>
+        </div>
+
+        <div class="card">
+            <h2>Recommendations</h2>
+            <p>Get recipe recommendations using XPath.</p>
+            <a class="button green" th:href="@{/recommend-by-skill}">By Skill</a>
+            <a class="button purple" th:href="@{/recommend-by-skill-and-cuisine}" style="margin-left:10px;">By Skill + Cuisine</a>
+        </div>
+    </div>
+
+    <div class="info-box" th:if="${firstUser != null}">
+        <h2>Current First User from XML</h2>
+        <p><strong>Name:</strong> <span th:text="${firstUser.name}"></span> <span th:text="${firstUser.surname}"></span></p>
+        <p><strong>Cooking Skill Level:</strong> <span th:text="${firstUser.cookingSkillLevel}"></span></p>
+        <p><strong>Preferred Cuisine Type:</strong> <span th:text="${firstUser.preferredCuisineType}"></span></p>
+        <p>This user is used in the recommendation exercises.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Recipes Rendered with XSL</h2>
+            <p>View the recipe list transformed with XSLT and color highlighting based on user skill.</p>
+            <a class="button green" th:href="@{/recipes-xsl}">Open XSL View</a>
+        </div>
+
+        <div class="card">
+            <h2>Filter by Cuisine</h2>
+            <p>Select a cuisine type from a list and retrieve matching recipes with XPath.</p>
+            <a class="button purple" th:href="@{/filter-by-cuisine}">Open Filter</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

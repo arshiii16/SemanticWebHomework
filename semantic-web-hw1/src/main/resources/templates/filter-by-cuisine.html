@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter Recipes by Cuisine</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes}">Recipes</a>
+    <a th:href="@{/users}">Users</a>
+    <a th:href="@{/add-recipe}">Add Recipe</a>
+    <a th:href="@{/add-user}">Add User</a>
+    <a th:href="@{/recommend-by-skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend-by-skill-and-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes-xsl}">Recipes with XSL</a>
+    <a th:href="@{/filter-by-cuisine}">Filter by Cuisine</a>
+</div>
+
+<div class="page-container">
+    <h1 class="page-title">Filter Recipes by Cuisine Type</h1>
+
+    <div class="card">
+        <form th:action="@{/filter-by-cuisine}" method="get">
+            <label for="cuisine">Select a cuisine type:</label>
+            <select id="cuisine" name="cuisine">
+                <option value="">-- Choose cuisine --</option>
+                <option th:each="option : ${cuisineOptions}"
+                        th:value="${option}"
+                        th:text="${option}"
+                        th:selected="${option == selectedCuisine}">
+                </option>
+            </select>
+            <button class="button" type="submit">Filter</button>
+        </form>
+    </div>
+
+    <div th:if="${selectedCuisine != null and !selectedCuisine.isEmpty()}" class="info-box">
+        <strong th:text="'Results for cuisine: ' + ${selectedCuisine}"></strong>
+    </div>
+
+    <div th:if="${recipes != null and #lists.isEmpty(recipes)}" class="error-message">
+        No recipes found for the selected cuisine.
+    </div>
+
+    <div th:each="recipe : ${recipes}" class="card">
+        <h2 th:text="${recipe.title}"></h2>
+        <p><strong>ID:</strong> <span th:text="${recipe.id}"></span></p>
+        <p><strong>Cuisine Types:</strong> <span th:text="${recipe.cuisineTypes}"></span></p>
+        <p><strong>Difficulty Levels:</strong> <span th:text="${recipe.difficultyLevels}"></span></p>
+        <p><strong>Description:</strong> <span th:text="${recipe.description}"></span></p>
+
+        <p>
+            <a class="button" th:href="@{/recipe/{id}(id=${recipe.id})}">View Details</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

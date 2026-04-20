@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            padding: 10px 16px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a th:href="@{/recipes}">Back to recipes</a>
+</div>
+
+<div th:if="${errorMessage}" class="error" th:text="${errorMessage}"></div>
+
+<div th:if="${recipe}" class="container">
+    <h1 th:text="${recipe.title}"></h1>
+
+    <p><strong>ID:</strong> <span th:text="${recipe.id}"></span></p>
+    <p><strong>Cuisine Types:</strong> <span th:text="${recipe.cuisineTypes}"></span></p>
+    <p><strong>Difficulty Levels:</strong> <span th:text="${recipe.difficultyLevels}"></span></p>
+    <p><strong>Description:</strong> <span th:text="${recipe.description}"></span></p>
+</div>
+
+</body>
+</html>

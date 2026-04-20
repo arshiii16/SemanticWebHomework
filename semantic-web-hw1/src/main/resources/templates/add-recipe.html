@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<div class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/recipes}">Recipes</a>
+    <a th:href="@{/users}">Users</a>
+    <a th:href="@{/add-recipe}">Add Recipe</a>
+    <a th:href="@{/add-user}">Add User</a>
+    <a th:href="@{/recommend-by-skill}">Recommend by Skill</a>
+    <a th:href="@{/recommend-by-skill-and-cuisine}">Recommend by Skill + Cuisine</a>
+    <a th:href="@{/recipes-xsl}">Recipes with XSL</a>
+    <a th:href="@{/filter-by-cuisine}">Filter by Cuisine</a>
+</div>
+
+<div class="page-container">
+    <div class="card" style="max-width: 750px; margin: auto;">
+        <h1 class="page-title">Add Recipe</h1>
+
+        <div th:if="${errorMessage}" class="error-message" th:text="${errorMessage}"></div>
+
+        <form th:action="@{/add-recipe}" th:object="${recipe}" method="post">
+            <label>Title</label>
+            <input type="text" th:field="*{title}" />
+
+            <label>Cuisine Types (exactly 2, separated by commas)</label>
+            <input type="text" th:field="*{cuisineInput}" placeholder="Italian, European" />
+
+            <label>Difficulty Levels (exactly 3, separated by commas)</label>
+            <input type="text" th:field="*{difficultyInput}" placeholder="Beginner, Intermediate, Advanced" />
+
+            <label>Description</label>
+            <textarea th:field="*{description}" rows="4"></textarea>
+
+            <button class="button dark" type="submit">Save Recipe</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
